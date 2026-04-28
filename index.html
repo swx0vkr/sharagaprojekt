@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Java - Start</title>
+
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(120deg, #08111f, #18283d, #0b1630);
+    color: white;
+    min-height: 100vh;
+}
+
+.container {
+    width: 1100px;
+    max-width: 94%;
+    margin: 0 auto;
+    padding: 25px 0;
+}
+
+nav {
+    background: rgba(255,255,255,0.08);
+    padding: 18px 22px;
+    border-radius: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #ff7a4d;
+}
+
+.menu {
+    display: flex;
+    gap: 18px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.menu a:hover {
+    color: #ff7a4d;
+}
+
+.hero {
+    background: linear-gradient(135deg, #f05a3f, #ff8a5b);
+    border-radius: 20px;
+    padding: 45px;
+    margin-bottom: 18px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.3);
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    max-width: 750px;
+    line-height: 1.7;
+    font-size: 17px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.card {
+    min-height: 170px;
+    border-radius: 18px;
+    padding: 28px;
+    background: rgba(255,255,255,0.12);
+    box-shadow: 0 8px 22px rgba(0,0,0,0.25);
+    transition: 0.25s;
+    border: 1px solid rgba(255,255,255,0.12);
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    background: rgba(255,255,255,0.18);
+}
+
+.card h2 {
+    margin-bottom: 14px;
+    color: #ffb199;
+}
+
+.card p {
+    line-height: 1.6;
+    color: #e5e7eb;
+}
+
+.orange {
+    background: #f05a3f;
+}
+
+.orange h2,
+.orange p {
+    color: white;
+}
+
+.big {
+    grid-column: span 2;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+@media (max-width: 850px) {
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .big {
+        grid-column: span 1;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<nav>
+    <div class="logo">Java</div>
+
+    <div class="menu">
+        <a href="index.html">Start</a>
+        <a href="geneza.html">Geneza</a>
+        <a href="technologia.html">Technologia</a>
+        <a href="zastosowania.html">Zastosowania</a>
+        <a href="podsumowanie.html">Podsumowanie</a>
+        <a href="zrodla.html">Źródła</a>
+    </div>
+</nav>
+
+<section class="hero">
+    <h1>Język Java</h1>
+    <p>
+        Java to popularny język programowania używany do tworzenia aplikacji mobilnych,
+        stron internetowych, programów komputerowych oraz dużych systemów biznesowych.
+    </p>
+</section>
+
+<section class="grid">
+
+    <a href="geneza.html">
+        <article class="card">
+            <h2>Geneza</h2>
+            <p>Poznaj historię Javy oraz jej najważniejsze założenia.</p>
+        </article>
+    </a>
+
+    <a href="technologia.html">
+        <article class="card">
+            <h2>Technologia</h2>
+            <p>Sprawdź, jak działa Java, JVM, typowanie i obsługa błędów.</p>
+        </article>
+    </a>
+
+    <a href="zastosowania.html">
+        <article class="card orange">
+            <h2>Zastosowania</h2>
+            <p>Zobacz, gdzie Java jest używana w praktyce.</p>
+        </article>
+    </a>
+
+    <article class="card big">
+        <h2>Dlaczego warto poznać Javę?</h2>
+        <p>
+            Java jest stabilna, bezpieczna i działa na wielu systemach.
+            Jest często używana w szkołach, firmach, bankach i dużych projektach.
+        </p>
+    </article>
+
+    <a href="podsumowanie.html">
+        <article class="card">
+            <h2>Podsumowanie</h2>
+            <p>Zalety, wady, źródła oraz pomysły na dalszą naukę.</p>
+        </article>
+    </a>
+
+</section>
+
+</div>
+
+</body>
+</html>
